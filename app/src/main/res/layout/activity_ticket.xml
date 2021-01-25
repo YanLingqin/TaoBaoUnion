@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/iv_ticket_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_tao_kou_ling"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="33dp">
+
+        <ImageView
+            android:id="@+id/iv_ticket_cover"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+        <edu.swpu.se2018.ylq.taobaounionsencond.ui.custom.LoadingView
+            android:id="@+id/ticket_cover_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/ticket_load_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="加载出错"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_ticket_code"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_ticket_code_bg"
+        android:focusable="false"
+        android:gravity="center"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="$$Sdhavgdnmns"
+        android:textColor="#4a4a4a" />
+
+    <TextView
+        android:id="@+id/tv_copy_or_open"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button_bg"
+        android:gravity="center"
+        android:text="领券"
+        android:textSize="18sp" />
+
+</LinearLayout>

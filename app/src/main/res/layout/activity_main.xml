@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <!--    该布局放置页面（Fragment）（占位）-->
+    <FrameLayout
+        android:id="@+id/main_page_container"
+        android:layout_width="match_parent"
+        android:background="@color/colorEFEEEE"
+        android:layout_above="@id/main_navigation_bar"
+        android:layout_height="match_parent" />
+    <!--    底部导航栏-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/navigation_bar_color"
+        app:itemTextColor="@drawable/navigation_bar_color"
+        app:menu="@menu/my_navigation_items" />
+    <!--  android:layout_alignParentBottom="true" ：置于布局底部
+          app:itemIconTint="@drawable/navigation_bar_color" :给导航栏文字设置颜色
+         app:itemTextColor="@drawable/navigation_bar_color"：给导航栏图标设置颜色-->
+
+</RelativeLayout>

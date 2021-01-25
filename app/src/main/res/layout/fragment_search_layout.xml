@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/orange">
+
+        <TextView
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="取消" />
+
+
+        <EditText
+            android:id="@+id/et_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toStartOf="@id/btn_search"
+            android:background="@drawable/shape_edit_box_bg"
+            android:hint="@string/txt_search_hint_tips"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+        <!--  通过设置 android:background="@drawable/shape_edit_box_bg"
+            可以取消掉editText自带的下划线-->
+
+        <ImageView
+            android:id="@+id/iv_search_clear"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/btn_search"
+            android:src="@mipmap/remove"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/base_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaoBaoUnionSecond</string>
+    <string name="txt_home">首页</string>
+    <string name="txt_recommend">精选</string>
+    <string name="txt_search">搜索</string>
+    <string name="txt_red_packet">特惠</string>
+    <string name="txt_search_hint_tips">搜你想搜....的宝贝</string>
+    <string name="txt_network_error_tips">网络出错，请点击重试</string>
+    <string name="txt_goods_off_price">省%1$d元</string>
+    <string name="txt_goods_price">￥%1$.2f元</string>
+    <string name="txt_goods_origin_price">原价%1$.2f元</string>
+    <string name="txt_goods_pursue">%1$d人已购买</string>
+    <string name="txt_tao_kou_ling">淘口令</string>
+    <string name="txt_loading_tips">玩命加载中....</string>
+    <string name="txt_recommend_product">精选宝贝</string>
+    <string name="txt_on_sell_product">特惠宝贝</string>
+    <string name="txt_search_history">搜索历史</string>
+    <string name="txt_recommend_keyword">热门搜索</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--首页-->
+    <item
+        android:id="@+id/home"
+        android:icon="@mipmap/home_normal"
+        android:title="@string/txt_home" />
+    <!--精选-->
+    <item
+        android:id="@+id/recommend"
+        android:icon="@mipmap/select_normal"
+        android:title="@string/txt_recommend" />
+    <!--特惠-->
+    <item
+        android:id="@+id/red_packet"
+        android:icon="@mipmap/red_packet_normal"
+        android:title="@string/txt_red_packet" />
+    <!--搜索-->
+    <item
+        android:id="@+id/search"
+        android:icon="@mipmap/search_normal"
+        android:title="@string/txt_search" />
+</menu>

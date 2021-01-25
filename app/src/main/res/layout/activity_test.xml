@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ui.activities.TestActivity">
+
+   <Button
+       android:layout_width="match_parent"
+       android:text="test"
+       android:textAllCaps="false"
+       android:layout_height="wrap_content"
+       android:id="@+id/btn_test"/>
+
+   <edu.swpu.se2018.ylq.taobaounionsencond.ui.custom.LoadingView
+       android:layout_width="33dp"
+       android:id="@+id/iv_loading"
+       android:layout_below="@id/btn_test"
+       android:layout_height="33dp"/>
+
+    <edu.swpu.se2018.ylq.taobaounionsencond.ui.custom.TextFlowLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/text_flow_layout"
+        android:layout_below="@id/iv_loading"
+        android:layout_height="wrap_content"/>
+
+
+    <RadioGroup
+        android:id="@+id/test_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!--android:button="@null" : 取消选择圈
+            android:drawableTop="@drawable/selector_navigation_home":在文字上放设置图片
+            android:checked="true" ：默认选择-->
+
+        <RadioButton
+            android:id="@+id/test_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_navigation_home"
+            android:text="@string/txt_home"
+            android:textColor="@drawable/navigation_bar_color" />
+
+        <RadioButton
+            android:id="@+id/test_recommend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_navigation_recommend"
+            android:text="@string/txt_recommend"
+            android:textColor="@drawable/navigation_bar_color" />
+
+        <RadioButton
+            android:id="@+id/test_red_packet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_navigation_red_packet"
+            android:text="@string/txt_red_packet"
+            android:textColor="@drawable/navigation_bar_color" />
+
+        <RadioButton
+            android:id="@+id/test_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/txt_search"
+            android:drawableTop="@drawable/selector_navigation_search"
+            android:textColor="@drawable/navigation_bar_color" />
+    </RadioGroup>
+
+</RelativeLayout>
